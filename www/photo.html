@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <title>GONGZEZHENG的图片库</title>
+</head>
+
+
+<div class="wrap">
+<div class="inner">
+<body style="background-color: antiquewhite">
+	<header>
+		<h1>图库</h1>
+	</header>
+	<p>
+	<table width="1100" border="0" cellspacing="0" cellpadding="0" >
+  <tbody>
+    <tr>
+      <th scope="col"><a href="img/box/1.JPG" onclick="showPic(this); return false;" title="1">锦山客运</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/2.JPG" onclick="showPic(this); return false;" title="2">松江公交</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/3.JPG" onclick="showPic(this); return false;" title="3">金山巴士</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/4.JPG" onclick="showPic(this); return false;" title="4">巴士一公司</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/5.JPG" onclick="showPic(this); return false;" title="5">巴士一公司</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/6.JPG" onclick="showPic(this); return false;" title="6">浦东上南</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/7.JPG" onclick="showPic(this); return false;" title="7">巴士一公司</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/8.JPG" onclick="showPic(this); return false;" title="8">空港巴士</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/9.JPG" onclick="showPic(this); return false;" title="9">浦东杨高</a>&nbsp;</th>
+      <th scope="col"><a href="img/box/10.JPG" onclick="showPic(this); return false;" title="10">浦东南汇</a>&nbsp;</th>
+    </tr>
+  </tbody>
+</table>
+	</p>
+		<img id="pic-3" src="img/box/1.JPG" alt="404"/><br>
+		<p id="description">choose an image.</p>
+		<div id="stc">
+			<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center" >
+			  <tbody>
+				<tr>
+				  <th scope="col" align="center">车型&nbsp;</th>
+				  <th scope="col" align="center">牌照&nbsp;</th>
+				  <th scope="col" align="center">自编号&nbsp;</th>
+				  <th scope="col" align="center">上线年份&nbsp;</th>
+				  <th scope="col" align="center">线路&nbsp;</th>
+				</tr>
+				<tr>
+				  <td id="cx" align="center">SXC6120GHEV&nbsp;</td>
+				  <td id="pz" align="center">沪DF3493&nbsp;</td>
+				  <td id="zb" align="center">WH2-5021&nbsp;</td>
+				  <td id="nf" align="center">2015&nbsp;</td>
+				  <td id="xl" align="center">莲朱专线&nbsp;</td>
+				</tr>
+			  </tbody>
+			</table>
+		</div>
+		<script type="text/javascript">
+			
+			function showPic(whichpic){
+				var source=whichpic.getAttribute("href");
+				var placeholder=document.getElementById("pic-3");
+				placeholder.setAttribute("src", source);
+				var text=whichpic.getAttribute("title");
+				var description=document.getElementById("description");
+				description.firstChild.nodeValue=text;
+				var cx=document.getElementById("cx");
+				var pz=document.getElementById("pz");
+				var zb=document.getElementById("zb");
+				var nf=document.getElementById("nf");
+				var xl=document.getElementById("xl");
+				switch(text) {
+					 case "1":
+						cx.firstChild.nodeValue="SXC6120GHEV";
+						pz.firstChild.nodeValue="沪DF3493";
+						zb.firstChild.nodeValue="WH2-5021";
+						nf.firstChild.nodeValue="2015";
+						xl.firstChild.nodeValue="莲朱专线";
+						break;
+					case "2":						
+						cx.firstChild.nodeValue="SXC6105G4";
+						pz.firstChild.nodeValue="沪BE4347";
+						zb.firstChild.nodeValue="SXC-472";
+						nf.firstChild.nodeValue="2010";
+						xl.firstChild.nodeValue="松江35路";
+						break;
+					case "3":
+						cx.firstChild.nodeValue="SXC6105G3A";
+						pz.firstChild.nodeValue="沪B98580";
+						zb.firstChild.nodeValue="W0B-386N";
+						nf.firstChild.nodeValue="2010";
+						xl.firstChild.nodeValue="浦卫线";
+						break;
+					case "4":
+						cx.firstChild.nodeValue="SXC6105G3";
+						pz.firstChild.nodeValue="沪B49722";
+						zb.firstChild.nodeValue="W0A-319H";
+						nf.firstChild.nodeValue="2008";
+						xl.firstChild.nodeValue="817";
+						break;
+					case "5":
+						cx.firstChild.nodeValue="SWB6100V5";
+						pz.firstChild.nodeValue="沪B98563";
+						zb.firstChild.nodeValue="S0F-082A";
+						nf.firstChild.nodeValue="2010";
+						xl.firstChild.nodeValue="960";
+						break;
+					case "6":
+						cx.firstChild.nodeValue="SXC6105G4B";
+						pz.firstChild.nodeValue="沪D58313";
+						zb.firstChild.nodeValue="W0F-070";
+						nf.firstChild.nodeValue="2013";
+						xl.firstChild.nodeValue="576";
+						break;
+					case "7":
+						cx.firstChild.nodeValue="SWB6120V6LE";
+						pz.firstChild.nodeValue="沪BD6043";
+						zb.firstChild.nodeValue="S2M-038A";
+						nf.firstChild.nodeValue="2010";
+						xl.firstChild.nodeValue="147";
+						break;
+					case "8":
+						cx.firstChild.nodeValue="KLQ6128KAE43";
+						pz.firstChild.nodeValue="沪DL4245";
+						zb.firstChild.nodeValue="-";
+						nf.firstChild.nodeValue="2016";
+						xl.firstChild.nodeValue="机场一线";
+						break;
+					case "9":
+						cx.firstChild.nodeValue="XMQ6891G1";
+						pz.firstChild.nodeValue="沪B91316";
+						zb.firstChild.nodeValue="X9B-295";
+						nf.firstChild.nodeValue="2010";
+						xl.firstChild.nodeValue="北蔡1路";
+						break;
+					case "10":
+						cx.firstChild.nodeValue="SWB6100V5";
+						pz.firstChild.nodeValue="沪B53986";
+						zb.firstChild.nodeValue="S0E-249";
+						nf.firstChild.nodeValue="2009";
+						xl.firstChild.nodeValue="南南线";
+						break;
+					 default:
+						cx.firstChild.nodeValue="SXC6120GHEV";
+						pz.firstChild.nodeValue="沪DF3493";
+						zb.firstChild.nodeValue="WH2-5021";
+						nf.firstChild.nodeValue="2015";
+						xl.firstChild.nodeValue="莲朱专线";
+						break;
+				} 
+				
+			}
+		</script>
+
+   <p><a href='./index.html'>返回主页面</a></p>
+</body>
+
+		<footer>
+        <HR>
+        <p>Busdriver Gongzezheng ECNU CS-10172100163</p>
+    </footer>
+			
+</div>
+</div>
+			
